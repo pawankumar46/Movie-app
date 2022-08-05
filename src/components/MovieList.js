@@ -19,14 +19,21 @@ function MovieList(props) {
     <div >
          <h2>Movie List</h2>
           <div  className='row'>
-          {term.length < 1 ?  <ul> 
-            
+          {term.length < 1 ?  
+               
+             <div>
             {movie.map((ele)=>{
                 return <MovieCard  key={ele.id} {...ele}  />
             })}
-       </ul>  : searchResults.map((ele)=>{
+            </div>
+        : 
+        <div>
+        {searchResults.map((ele)=>{
                 return <MovieCard  key={ele.id} {...ele} />
        })}
+       </div>
+
+}
          </div>
     </div>
   )

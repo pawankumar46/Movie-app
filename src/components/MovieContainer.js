@@ -46,7 +46,7 @@ function MovieContainer(props) {
         </div>
           <div className='row'>
         <div className='col-md-8'>
-           <div className='row'>
+           <div  className='row'>
         <MovieList searchResults={searchResults}  term={term}/> 
            </div>
         </div>

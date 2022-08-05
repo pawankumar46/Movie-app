@@ -12,12 +12,12 @@ function MovieCard(props) {
        dispatch(removeId(id))
     }
   return (
-      <div>
+      <div  className='col-sm-4'>
 
      
     <div  > 
    <div    >
-      <div   className='col-sm-4'>
+      <div  >
          <div >
             <div className='card my-1'>
       <center> 
